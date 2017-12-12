@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import { createStore } from 'redux';
-import { Provider,connect } from 'react-redux';
-
-
+import { Provider, connect } from 'react-redux';
+import '../styles/mystyles.scss';
 
 const Home = () => (
     <div>
         <h1>Home Page</h1>    
+        <Link to="/items">Show Items</Link>
     </div>
 );
 
