@@ -1,0 +1,91 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Helvetica,Arial, sans-serif;
+}
+@mixin border-radius($r){
+    -webkit-border-radius : $r;
+    -moz-border-radius: $r;
+    -ms-border-radius : $r;
+    -o-border-radius : $r;
+    border-radius: $r;
+};
+#app{
+    button{
+        border:1px rgb(17, 6, 116) solid;
+        padding: 0.5rem 1.5rem;
+        margin:0.5rem;
+        background-color: rgb(21, 75, 177);
+        color:white;
+        @include border-radius(2px);
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.route{
+    text-align: center;
+    background-color: rgb(91, 172, 226);
+    color:#f6f6f6;
+    border : 1px solid darken(rgb(91, 172, 226), 20%);
+    width:70%;
+    @include border-radius(5px);
+    box-sizing: border-box;
+    padding: 3rem;
+}
+.menu-bar{
+    list-style-type: none;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: flex-start;
+}
+
+$menu-height : 35px;
+
+.menu-item{
+    
+    a{
+        width: 85px;
+        max-width: 60px;
+        display: block;
+        height: $menu-height;
+        line-height: $menu-height;
+        border-right: 1px solid white;
+        background-color: #d9f0ff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+.red{
+    background-color: #679cbf  !important;
+    color: white !important;
+}
+
+$row-color : whitesmoke;
+
+
+table td{
+    padding:1rem 0.5rem;
+}
+table thead{
+    tr {
+        background-color: burlywood;
+    }
+}
+table tbody tr:nth-child(2n){
+    background-color: $row-color;
+}
+table tbody tr:nth-child(2n+1){
+    background-color: darken($row-color, $amount: 8);
+}
+
+

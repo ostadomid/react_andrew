@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendering Header 1`] = `
+<ul
+  className="menu-bar"
+>
+  <li
+    className="menu-item"
+  >
+     
+    <NavLink
+      activeClassName="red"
+      ariaCurrent="true"
+      exact={true}
+      to="/"
+    >
+      Home
+    </NavLink>
+     
+  </li>
+  <li
+    className="menu-item"
+  >
+     
+    <NavLink
+      activeClassName="red"
+      ariaCurrent="true"
+      exact={true}
+      to="/add"
+    >
+      Add
+    </NavLink>
+     
+  </li>
+  <li
+    className="menu-item"
+  >
+     
+    <NavLink
+      activeClassName="red"
+      ariaCurrent="true"
+      exact={true}
+      to="/edit"
+    >
+      Edit
+    </NavLink>
+     
+  </li>
+</ul>
+`;
