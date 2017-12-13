@@ -23,7 +23,7 @@ module.exports = (env) => {
                 },
                 {
                     test: /\.s?css$/,
-                    use: ExtractTextPlugin.extract({use:[{loader:'css-loader', options:{minimize:true}},'sass-loader']})
+                    use: ExtractTextPlugin.extract({ use: [{ loader: 'css-loader', options: { minimize: true, sourceMap: true } }, { loader: 'sass-loader', options: { sourceMap: true } }] })
                 }
             ]
         },
@@ -37,4 +37,4 @@ module.exports = (env) => {
             port: 8000
         }
     };
- };
+};
